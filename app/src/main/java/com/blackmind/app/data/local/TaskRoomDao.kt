@@ -1,4 +1,4 @@
-package org.pabloaraya.places.data.local
+package com.blackmind.app.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

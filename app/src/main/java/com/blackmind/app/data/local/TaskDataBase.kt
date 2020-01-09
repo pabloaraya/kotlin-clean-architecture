@@ -1,4 +1,4 @@
-package org.pabloaraya.places.data.local
+package com.blackmind.app.data.local
 
 import android.content.Context
 import androidx.room.Database

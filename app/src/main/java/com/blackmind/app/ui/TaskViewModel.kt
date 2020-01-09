@@ -1,16 +1,12 @@
-package org.pabloaraya.places.ui
+package com.blackmind.app.ui
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import org.pabloaraya.places.domain.TaskTestRepository
+import com.blackmind.app.domain.TaskTestRepository
 
 internal class TaskViewModel(private val repository: TaskTestRepository) : ViewModel() {
 
-    private val tasks: LiveData<List<TaskEntity>>
-
-    init {
-        tasks = repository.getTasks()
-    }
+    private val tasks: LiveData<List<TaskEntity>> = repository.getTasks()
 
     fun getAllTask(): LiveData<List<TaskEntity>> = tasks
 }
