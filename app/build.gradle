@@ -6,12 +6,15 @@ apply plugin: 'kotlin-kapt'
 android {
   compileSdkVersion 28
   defaultConfig {
-    applicationId "com.blackmind.app"
+    applicationId 'com.rankmi.app'
     minSdkVersion 21
     targetSdkVersion 28
     versionCode 1
     versionName "1.0"
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+  viewBinding {
+    enabled = true
   }
   buildTypes {
     release {
@@ -24,6 +27,7 @@ android {
 dependencies {
   implementation fileTree(dir: 'libs', include: ['*.jar'])
   implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+  implementation project(':core')
 
   implementation 'androidx.appcompat:appcompat:1.0.2'
   implementation 'androidx.core:core-ktx:1.0.1'
@@ -49,7 +53,10 @@ dependencies {
   implementation "android.arch.persistence.room:runtime:1.1.0"
   kapt "android.arch.persistence.room:compiler:1.1.0"
 
-  implementation 'org.koin:koin-androidx-viewmodel:1.0.2'
+  implementation "org.koin:koin-android:${versions.koin}"
+  implementation "org.koin:koin-androidx-scope:${versions.koin}"
+  implementation "org.koin:koin-androidx-viewmodel:${versions.koin}"
+  implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
 
   testImplementation 'junit:junit:4.12'
   androidTestImplementation 'androidx.test:runner:1.1.1'
