@@ -6,7 +6,7 @@ apply plugin: 'kotlin-kapt'
 android {
   compileSdkVersion 28
   defaultConfig {
-    applicationId "org.pabloaraya.places"
+    applicationId "com.blackmind.app"
     minSdkVersion 21
     targetSdkVersion 28
     versionCode 1
@@ -46,9 +46,8 @@ dependencies {
   implementation 'androidx.legacy:legacy-support-v4:1.0.0'
   kapt 'androidx.lifecycle:lifecycle-compiler:2.0.0'
 
-
-  implementation "android.arch.persistence.room:runtime:1.1.1"
-  kapt "android.arch.persistence.room:compiler:1.1.1"
+  implementation "android.arch.persistence.room:runtime:1.1.0"
+  kapt "android.arch.persistence.room:compiler:1.1.0"
 
   implementation 'org.koin:koin-androidx-viewmodel:1.0.2'
 

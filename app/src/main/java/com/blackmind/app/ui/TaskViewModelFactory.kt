@@ -1,8 +1,8 @@
-package org.pabloaraya.places.ui
+package com.blackmind.app.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import org.pabloaraya.places.domain.TaskTestRepository
+import com.blackmind.app.domain.TaskTestRepository
 
 class TaskViewModelFactory(private val repository: TaskTestRepository) : ViewModelProvider.NewInstanceFactory() {
 

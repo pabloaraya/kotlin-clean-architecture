@@ -1,12 +1,13 @@
-package org.pabloaraya.places.ui
+package com.blackmind.app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.LifecycleOwner
+import com.blackmind.app.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
-import org.pabloaraya.places.R
+
 
 class MainActivity : AppCompatActivity(), LifecycleOwner {
 
@@ -24,7 +25,9 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
-                .replace(R.id.fragment_content, TaskFragment())
+                .replace(R.id.fragment_content,
+                    TaskFragment()
+                )
                 .commit()
         }
 

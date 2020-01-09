@@ -1,4 +1,4 @@
-package org.pabloaraya.places.data.local
+package com.blackmind.app.data.local
 
 import android.os.Handler
 import android.os.HandlerThread

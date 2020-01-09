@@ -1,4 +1,4 @@
-package org.pabloaraya.places.ui
+package com.blackmind.app.ui
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -10,10 +10,12 @@ import android.widget.ProgressBar
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import org.pabloaraya.places.R
-import org.pabloaraya.places.domain.TaskTestRepository
+import com.blackmind.app.R
 
-class TaskFragment : Fragment(), TaskAdapter.TaskAdapterOnItemClickHandler {
+import com.blackmind.app.domain.TaskTestRepository
+
+class TaskFragment : Fragment(),
+    TaskAdapter.TaskAdapterOnItemClickHandler {
 
   private lateinit var taskAdapter: TaskAdapter
   private lateinit var recyclerView: RecyclerView

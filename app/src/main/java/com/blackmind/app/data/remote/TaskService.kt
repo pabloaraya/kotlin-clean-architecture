@@ -1,8 +1,7 @@
-package org.pabloaraya.places.data.remote
+package com.blackmind.app.data.remote
 
 import kotlinx.coroutines.Deferred
-import org.pabloaraya.places.data.local.TaskEntity
-import retrofit2.http.Body
+import com.blackmind.app.data.local.TaskEntity
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path

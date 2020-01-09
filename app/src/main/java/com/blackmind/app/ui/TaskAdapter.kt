@@ -1,4 +1,4 @@
-package org.pabloaraya.places.ui
+package com.blackmind.app.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,8 @@ import android.widget.ImageView
 import android.widget.TextView
 
 import androidx.recyclerview.widget.RecyclerView
-import org.pabloaraya.places.R
+import com.blackmind.app.R
+
 
 internal class TaskAdapter(
   private val onItemClickHandler: TaskAdapterOnItemClickHandler

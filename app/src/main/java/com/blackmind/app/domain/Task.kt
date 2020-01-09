@@ -1,4 +1,4 @@
-package org.pabloaraya.places.domain
+package com.blackmind.app.domain
 
 data class Task(
   private val title: String,
