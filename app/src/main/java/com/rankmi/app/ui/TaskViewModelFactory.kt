@@ -1,8 +1,8 @@
-package com.blackmind.app.ui
+package com.rankmi.app.ui
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.blackmind.app.domain.TaskTestRepository
+import com.rankmi.app.domain.TaskTestRepository
 
 class TaskViewModelFactory(private val repository: TaskTestRepository) : ViewModelProvider.NewInstanceFactory() {
 

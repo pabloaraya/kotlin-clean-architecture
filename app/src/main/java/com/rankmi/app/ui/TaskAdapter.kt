@@ -1,4 +1,4 @@
-package com.blackmind.app.ui
+package com.rankmi.app.ui
 
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +7,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 import androidx.recyclerview.widget.RecyclerView
-import com.blackmind.app.R
+import com.rankmi.app.R
 
 
 internal class TaskAdapter(

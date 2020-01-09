@@ -1,4 +1,4 @@
-package com.blackmind.app.data.local
+package com.rankmi.app.data.local
 
 import android.content.Context
 import androidx.room.Database

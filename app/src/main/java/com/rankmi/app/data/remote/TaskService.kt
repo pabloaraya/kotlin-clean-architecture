@@ -1,7 +1,7 @@
-package com.blackmind.app.data.remote
+package com.rankmi.app.data.remote
 
 import kotlinx.coroutines.Deferred
-import com.blackmind.app.data.local.TaskEntity
+import com.rankmi.app.data.local.TaskEntity
 import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path

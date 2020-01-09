@@ -1,11 +1,11 @@
-package com.blackmind.app.ui
+package com.rankmi.app.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import androidx.appcompat.widget.Toolbar
 import androidx.lifecycle.LifecycleOwner
-import com.blackmind.app.R
+import com.rankmi.app.R
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 

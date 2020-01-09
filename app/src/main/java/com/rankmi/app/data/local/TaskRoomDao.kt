@@ -1,4 +1,4 @@
-package com.blackmind.app.data.local
+package com.rankmi.app.data.local
 
 import androidx.lifecycle.LiveData
 import androidx.room.Dao

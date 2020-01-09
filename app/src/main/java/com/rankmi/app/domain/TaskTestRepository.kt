@@ -1,8 +1,8 @@
-package com.blackmind.app.domain
+package com.rankmi.app.domain
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.blackmind.app.ui.TaskEntity
+import com.rankmi.app.ui.TaskEntity
 import java.util.Arrays.asList
 
 class TaskTestRepository {

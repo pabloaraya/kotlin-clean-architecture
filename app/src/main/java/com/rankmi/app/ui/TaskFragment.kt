@@ -1,4 +1,4 @@
-package com.blackmind.app.ui
+package com.rankmi.app.ui
 
 import androidx.lifecycle.ViewModelProviders
 import android.os.Bundle
@@ -10,9 +10,9 @@ import android.widget.ProgressBar
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.RecyclerView
 import androidx.recyclerview.widget.StaggeredGridLayoutManager
-import com.blackmind.app.R
+import com.rankmi.app.R
 
-import com.blackmind.app.domain.TaskTestRepository
+import com.rankmi.app.domain.TaskTestRepository
 
 class TaskFragment : Fragment(),
     TaskAdapter.TaskAdapterOnItemClickHandler {

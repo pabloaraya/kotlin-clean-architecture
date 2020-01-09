@@ -1,6 +1,6 @@
-package com.blackmind.app.data.local
+package com.rankmi.app.data.local
 
-import com.blackmind.app.domain.TaskRepository
+import com.rankmi.app.domain.TaskRepository
 
 class TaskRoom(private val taskRoomDao: TaskRoomDao):
     TaskRepository {

@@ -1,4 +1,4 @@
-package com.blackmind.app.data.local
+package com.rankmi.app.data.local
 
 import android.os.Handler
 import android.os.HandlerThread

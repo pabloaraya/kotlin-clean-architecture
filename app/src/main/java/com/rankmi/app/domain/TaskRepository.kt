@@ -1,4 +1,4 @@
-package com.blackmind.app.domain
+package com.rankmi.app.domain
 
 interface TaskRepository {
 

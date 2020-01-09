@@ -1,6 +1,6 @@
-package com.blackmind.app.data.remote
+package com.rankmi.app.data.remote
 
-import com.blackmind.app.domain.TaskRepository
+import com.rankmi.app.domain.TaskRepository
 
 class TaskRetrofit(private val taskService: TaskService):
     TaskRepository {
