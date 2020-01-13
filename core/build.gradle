@@ -19,7 +19,7 @@ android {
     flavorDimensions "u-planner"
     productFlavors {
         dev {
-            buildConfigField "String", "URL_BASE_EXPERIENCE_API", "\"http://suite-dev-apiv3.u-planner.com/\""
+            buildConfigField "String", "URL_BASE_API", "\"http://rankmi.com/\""
             dimension "u-planner"
         }
 
