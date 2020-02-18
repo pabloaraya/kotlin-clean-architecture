@@ -2,11 +2,12 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-kapt'
+apply plugin: 'com.google.gms.google-services'
 
 android {
   compileSdkVersion 28
   defaultConfig {
-    applicationId 'com.rankmi.app'
+    applicationId 'cl.blackmind.notes'
     minSdkVersion 21
     targetSdkVersion 28
     versionCode 1
@@ -52,6 +53,10 @@ dependencies {
 
   implementation "android.arch.persistence.room:runtime:1.1.0"
   kapt "android.arch.persistence.room:compiler:1.1.0"
+
+  implementation 'com.google.firebase:firebase-analytics:17.2.2'
+  implementation 'com.google.firebase:firebase-auth:19.1.0'
+  implementation 'com.google.android.gms:play-services-auth:17.0.0'
 
   implementation "org.koin:koin-android:${versions.koin}"
   implementation "org.koin:koin-androidx-scope:${versions.koin}"
