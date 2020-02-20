@@ -1,8 +1,6 @@
-package cl.blackmind.app_api.remote
+package cl.blackmind.app_api.service
 
-import kotlinx.coroutines.Deferred
 //import cl.blackmind.app.data.local.TaskEntity
-import retrofit2.http.GET
 import retrofit2.http.POST
 import retrofit2.http.Path
 

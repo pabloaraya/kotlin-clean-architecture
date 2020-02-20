@@ -4,6 +4,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy.REPLACE
 import androidx.room.Query
+import cl.blackmind.app_local.entity.TaskEntity
 
 @Dao
 interface TaskRoomDao {

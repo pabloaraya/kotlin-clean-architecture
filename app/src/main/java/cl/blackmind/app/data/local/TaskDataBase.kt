@@ -4,7 +4,7 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import cl.blackmind.app_local.TaskEntity
+import cl.blackmind.app_local.entity.TaskEntity
 import cl.blackmind.app_local.TaskRoomDao
 
 @Database(entities = arrayOf(TaskEntity::class), version = 1)

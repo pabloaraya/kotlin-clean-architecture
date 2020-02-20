@@ -1,4 +1,4 @@
-package cl.blackmind.app_api.remote
+package cl.blackmind.app_api.service
 
 //import cl.blackmind.app.domain.TaskRepository
 
