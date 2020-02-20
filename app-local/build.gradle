@@ -1,0 +1,30 @@
+apply plugin: 'java-library'
+apply plugin: 'kotlin'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation project(':app-domain')
+
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.core:core-ktx:1.0.1'
+
+    api "androidx.room:room-ktx:2.2.2"
+    api "androidx.room:room-runtime:2.2.2"
+    kapt "androidx.room:room-compiler:2.2.2"
+    testImplementation "androidx.room:room-testing:2.2.2"
+
+    implementation "org.koin:koin-android:${versions.koin}"
+    implementation "org.koin:koin-androidx-scope:${versions.koin}"
+    implementation "org.koin:koin-androidx-viewmodel:${versions.koin}"
+    implementation 'com.jakewharton.threetenabp:threetenabp:1.2.1'
+
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
