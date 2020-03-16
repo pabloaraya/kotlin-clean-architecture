@@ -1,17 +1,17 @@
-package com.up.core.coroutines
+package cl.blackmind.core.coroutines
 
 import androidx.lifecycle.MutableLiveData
 import kotlinx.coroutines.Job
 import kotlinx.coroutines.cancelChildren
 import kotlin.coroutines.CoroutineContext
 
-abstract class BaseUnitUseCase<W : MutableLiveData<*>>(
+abstract class BaseUseCase<Q, W : MutableLiveData<*>>(
     protected open val backgroundContext: CoroutineContext,
     protected open val foregroundContext: CoroutineContext
 ) {
     private var parentJob = Job()
 
-    abstract fun execute(liveData: W)
+    abstract fun execute(liveData: W, params: Q)
 
     protected fun newJob(): Job {
         parentJob = parentJob.run {

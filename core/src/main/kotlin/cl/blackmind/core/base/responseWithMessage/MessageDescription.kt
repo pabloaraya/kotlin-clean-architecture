@@ -1,4 +1,4 @@
-package com.up.core.base.responseWithMessage
+package cl.blackmind.core.base.responseWithMessage
 
 data class MessageDescription(
     val title: String,

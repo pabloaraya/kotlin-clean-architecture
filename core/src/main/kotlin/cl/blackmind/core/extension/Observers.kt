@@ -1,10 +1,10 @@
-package com.up.core.extension
+package cl.blackmind.core.extension
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentActivity
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.Observer
-import com.up.core.coroutines.Completable
+import cl.blackmind.core.coroutines.Completable
 
 /* Observers */
 fun <T, L : LiveData<T>> FragmentActivity.observe(liveData: L, body: (T?) -> Unit) =

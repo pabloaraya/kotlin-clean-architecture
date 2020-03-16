@@ -1,10 +1,10 @@
-package com.up.core.coroutines
+package cl.blackmind.core.coroutines
 
-import com.up.core.extension.LiveCompletable
-import com.up.core.extension.postCancel
-import com.up.core.extension.postComplete
-import com.up.core.extension.postLoading
-import com.up.core.extension.postThrowable
+import cl.blackmind.core.extension.LiveCompletable
+import cl.blackmind.core.extension.postCancel
+import cl.blackmind.core.extension.postComplete
+import cl.blackmind.core.extension.postLoading
+import cl.blackmind.core.extension.postThrowable
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext

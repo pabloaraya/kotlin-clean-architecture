@@ -1,4 +1,4 @@
-package com.up.core.base
+package cl.blackmind.core.base
 
 data class Response<T>(
     val data: T,

@@ -1,4 +1,4 @@
-package com.up.core.extension
+package cl.blackmind.core.extension
 
 import retrofit2.Call
 import retrofit2.Callback
