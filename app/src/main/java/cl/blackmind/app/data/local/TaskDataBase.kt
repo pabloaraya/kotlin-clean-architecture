@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import cl.blackmind.app_local.entity.TaskEntity
 import cl.blackmind.app_local.TaskRoomDao
 
-@Database(entities = arrayOf(TaskEntity::class), version = 1)
+@Database(entities = [TaskEntity::class], version = 1)
 abstract class TaskDataBase : RoomDatabase() {
 
     abstract fun weatherDataDao(): TaskRoomDao
@@ -19,7 +19,7 @@ abstract class TaskDataBase : RoomDatabase() {
             if (INSTANCE == null) {
                 synchronized(TaskDataBase::class) {
                     INSTANCE = Room.databaseBuilder(
-                        context.getApplicationContext(),
+                        context.applicationContext,
                         TaskDataBase::class.java, "tasks.db"
                     ).build()
                 }

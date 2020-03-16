@@ -5,7 +5,6 @@ import androidx.core.content.edit
 import org.koin.core.KoinComponent
 import org.koin.core.inject
 
-
 object AppPreferences : KoinComponent {
 
     private val preferences: SharedPreferences by inject()
@@ -27,7 +26,7 @@ object AppPreferences : KoinComponent {
             putString(FIREBASE_TOKEN, value).apply()
         }
 
-    fun cleanSession() : Boolean {
+    fun cleanSession(): Boolean {
         preferences.edit().remove(AUTH_TOKEN).apply()
         return authToken == null
     }

@@ -1,4 +1,4 @@
-package com.up.core.coroutines
+package cl.blackmind.core.coroutines
 
 sealed class Completable {
     object OnComplete : Completable()

@@ -1,31 +1,31 @@
-package com.up.core.coroutines
+package cl.blackmind.core.coroutines
 
-import com.up.core.extension.LiveResult
-import com.up.core.extension.postCancel
-import com.up.core.extension.postEmpty
-import com.up.core.extension.postLoading
-import com.up.core.extension.postSuccess
-import com.up.core.extension.postThrowable
+import cl.blackmind.core.extension.LiveResult
+import cl.blackmind.core.extension.postCancel
+import cl.blackmind.core.extension.postEmpty
+import cl.blackmind.core.extension.postLoading
+import cl.blackmind.core.extension.postSuccess
+import cl.blackmind.core.extension.postThrowable
 import kotlinx.coroutines.CancellationException
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.launch
 import kotlinx.coroutines.withContext
 import kotlin.coroutines.CoroutineContext
 
-abstract class ResultUseCase<Q, T>(
+abstract class ResultUnitUseCase<T>(
     override val backgroundContext: CoroutineContext,
     override val foregroundContext: CoroutineContext
-) : BaseUseCase<Q, LiveResult<T>>(
+) : BaseUnitUseCase<LiveResult<T>>(
     backgroundContext, foregroundContext
 ) {
-    protected abstract suspend fun executeOnBackground(params: Q): T?
+    protected abstract suspend fun executeOnBackground(): T?
 
-    override fun execute(liveData: LiveResult<T>, params: Q) {
+    override fun execute(liveData: LiveResult<T>) {
         CoroutineScope(foregroundContext + newJob()).launch {
             liveData.postLoading()
 
             runCatching {
-                withContext(backgroundContext) { executeOnBackground(params)!! }
+                withContext(backgroundContext) { executeOnBackground()!! }
             }.onSuccess { response ->
                 liveData.postSuccess(response)
             }.onFailure { throwable ->
