@@ -17,13 +17,11 @@ class MainActivity : AppCompatActivity(), LifecycleOwner {
         val toolbar = findViewById<Toolbar>(R.id.toolbar)
         setSupportActionBar(toolbar)
 
-        Log.e("ACTIVITY", "OK")
-
         if (savedInstanceState == null) {
             supportFragmentManager
                 .beginTransaction()
                 .replace(
-                    R.id.fragment_content,
+                    R.id.main_container,
                     TaskFragment()
                 )
                 .commit()
